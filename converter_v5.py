@@ -1,3 +1,22 @@
+'''
+Example input:
+ZZZ    123
+length   :  100
+width   : 50
+
+ZZZ    322
+length   :  300
+width   : 440
+etc...
+
+Example output:
+zzz;length;width
+123;100;50
+322;300;440
+'''
+
+
+
 #!/usr/bin/python3
 import sys
 import re
