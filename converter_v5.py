@@ -86,7 +86,7 @@ def setAllAttributesAndValues(fileout):
             'zzz',
             'zzz',
             'zzz',
-			'zzz',
+	    'zzz',
             'zzz',
             'zzz',
             'zzz',
