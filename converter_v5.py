@@ -114,3 +114,44 @@ def setAllAttributesAndValues(fileout):
                     )
 
 setAllAttributesAndValues(file2)
+
+
+
+'''
+TEST method splitSplit
+
+https://www.online-python.com/
+
+import re
+
+dicTable = {1:"zzz    123|X|length   :  100|X|width   : 440"}
+
+def splitSplit(text, splitChar, textSearch):
+    splitted = text.split(splitChar)
+    attr = ""
+    val = ""
+    for valueSplitted in splitted:
+        if ( re.search('(zzz)',textSearch) ):
+            attr = valueSplitted[0:19].strip()
+            val = valueSplitted[19:len(valueSplitted)].strip()
+            break
+        
+        indexColumnInText = valueSplitted.strip().find(":")
+        attributeName = valueSplitted.strip()[0:indexColumnInText]
+        value = valueSplitted.strip()[indexColumnInText+1:len(valueSplitted)]
+        if( attributeName.strip() == textSearch.strip() ):
+            attr = attributeName.strip()
+            val = value.strip()
+            break
+    return attr, val
+
+
+#print(dicTable[1])
+
+for iter in dicTable:
+    zzz_val = splitSplit(dicTable[iter], "|X|", "length")[1]
+    zzz_atr = splitSplit(dicTable[iter], "|X|", "length")[0]
+
+
+print(f"attribute {zzz_atr} has the value {zzz_val}")
+'''
