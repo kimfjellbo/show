@@ -93,34 +93,8 @@ def setAllAttributesAndValues(fileout):
     with open(f"{fileout}", 'w', newline='', encoding='utf-8') as csv_file:
         fieldnames = [
             'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-	    'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
-            'zzz',
+            'length',
+            'width',
             ]
         csvWriter = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=";")
         csvWriter.writeheader()
@@ -129,66 +103,13 @@ def setAllAttributesAndValues(fileout):
             ATTRIBUTES_job = re.search('(zzz)',lineSplit[0])
             if( ATTRIBUTES_job ):
                 zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-
+                zzz = splitSplit(dicTable[iter], splitChar, "length")[1]
+                zzz = splitSplit(dicTable[iter], splitChar, "width")[1]
                 csvWriter.writerow(
                     {
                     'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz,
-                    'zzz':zzz
+                    'length':zzz,
+                    'width':zzz
                     }
                     )
 
