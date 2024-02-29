@@ -103,13 +103,13 @@ def setAllAttributesAndValues(fileout):
             ATTRIBUTES_job = re.search('(zzz)',lineSplit[0])
             if( ATTRIBUTES_job ):
                 zzz = splitSplit(dicTable[iter], splitChar, "zzz")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "length")[1]
-                zzz = splitSplit(dicTable[iter], splitChar, "width")[1]
+                length = splitSplit(dicTable[iter], splitChar, "length")[1]
+                width = splitSplit(dicTable[iter], splitChar, "width")[1]
                 csvWriter.writerow(
                     {
                     'zzz':zzz,
-                    'length':zzz,
-                    'width':zzz
+                    'length':length,
+                    'width':width
                     }
                     )
 
