@@ -1,10 +1,10 @@
 '''
 Example input:
-ZZZ    123
+zzz    123
 length   :  100
 width   : 50
 
-ZZZ    322
+zzz    322
 length   :  300
 width   : 440
 etc...
