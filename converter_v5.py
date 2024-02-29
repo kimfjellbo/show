@@ -154,4 +154,14 @@ for iter in dicTable:
 
 
 print(f"attribute {zzz_atr} has the value {zzz_val}")
+
+============================
+console output:
+
+attribute length has the value 100
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
 '''
