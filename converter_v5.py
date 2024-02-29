@@ -73,7 +73,7 @@ def splitSplit(text, splitChar, textSearch):
     attr = ""
     val = ""
     for valueSplitted in splitted:
-        if ( re.search('(ZZZ)',textSearch) ):
+        if ( re.search('(zzz)',textSearch) ):
             attr = valueSplitted[0:19].strip()
             val = valueSplitted[19:len(valueSplitted)].strip()
             break
