@@ -1,8 +1,3 @@
-'''
-
-'''
-
-
 # Works with Python 3.9.6
 import sys
 import codecs
